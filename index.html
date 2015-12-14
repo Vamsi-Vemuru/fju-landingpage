@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -16,13 +16,32 @@
     <div class="col-sm-2">
       <img id="logo" class="img-circle pull-right" src="img/fju-logo.png" alt="logo"></img>
     </div>
-    <div class="col-sm-10">
+    <div class="col-sm-5">
       <h1 id="header">Franklin Jefferson University</h1>
+    </div>
+    <div class="col-sm-5">
+      <ul id="toptabs" class="nav nav-pills nav-justified">
+        <li class="active"><a data-toggle="tab" href="#">Get to know FJU</a></li>
+        <li><a data-toggle="tab" href="#">Learning at FJU</a></li>
+        <li><a data-toggle="tab" href="#">FJU Courses</a></li>
+      </ul>
     </div>
   </div>
 </div>
 <div class="container">
-  <ul id="innertabs" class="nav nav-pills nav-justified">
+  <div class="row">
+    <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <h1>Masters of Science in Software Development</h1><hr>
+    <p>The Master of Science in Software Development program is designed to provide an immersive learn by doing experience for students who aspire to take up roles in fast-paced software companies and tech startups. The curriculum begins with an introduction to programming, object oriented programming and databases as the foundation courses. Students then prepared to develop software for the Internet and Android devices. In addition students apply their skills and professional software development practices on real customer projects to attain a mastery in the field.</p>
+  </div>
+  <div class="col-sm-2"></div> 
+  </div>  
+</div>
+<div id="info" class="container well-sm">
+  
+  <div class="col-sm-12" style="padding:0px">
+    <ul id="innertabs" class="nav nav-pills nav-justified" style="background-color:rgb(98, 133, 156)">
     <li class="active"><a data-toggle="tab" href="#overview">Overview</a></li>
     <li><a data-toggle="tab" href="#eligibility">Eligibility</a></li>
     <li><a data-toggle="tab" href="#courses">Courses</a></li>
@@ -40,7 +59,7 @@
       <h3>Courses</h3>
     </div>
     <div id="sign-up" class="tab-pane fade">
-      <div class="container">
+      <div class="container" style="width:100%">
       <form role="form" class="form-horizontal">
         <div class="form-group">
           <div class="col-sm-3"></div>
@@ -80,39 +99,40 @@
 
     </div>
     <div id="sign-in" class="tab-pane   fade">
-      <div class="container">
+      <div class="container" style="width:100%">
       <fieldset>
       <form role="form" class="form-horizontal">
         <div class="form-group">
           <div class="col-sm-3"></div>
-          <div class="col-sm-4">
+          <div class="col-sm-5">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" placeholder="Enter email">
           </div>
-          <div class="col-sm-5"></div>
+          <div class="col-sm-4"></div>
         </div>
         <div class="form-group">
           <div class="col-sm-3"></div>
-          <div class="col-sm-4">
+          <div class="col-sm-5">
             <label for="pwd">Password</label>
             <input type="password" class="form-control" id="pwd" placeholder="Enter password"> 
           </div>
-          <div class="col-sm-5"></div>
+          <div class="col-sm-4"></div>
         </div>
         <div class="col-sm-3"></div>
-        <div class="checkbox col-sm-2">
+        <div class="checkbox col-sm-3">
           <label><input type="checkbox"> Remember me</label>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
           <button type="submit" id="signinbtn" class="btn btn-default">Sign In</button>
         </div>
-        <div class="col-sm-5"></div>
+        <div class="col-sm-3"></div>
         
       </form>
     </fieldset>
     </div>
 
     </div>
+  </div>
   </div>
 </div>
 

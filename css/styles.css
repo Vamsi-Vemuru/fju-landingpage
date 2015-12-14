@@ -1,19 +1,23 @@
 .jumbotron {
   padding-top:0px; 
   padding-bottom:0px; 
-  background-color:#2D4250;
+  background-color:rgb(98, 133, 156);
 }
 
 #logo {
-  margin-top:5px; 
-  margin-right:20px;
+  margin-top:0px; 
+  margin-right: 0px;
+  margin-bottom: 0px;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
 }
 
 #header {
   color:white; 
-  font-family: 'Slabo 10px', serif; 
+  font-family: 'Italianno', cursive;
   margin-top:2px;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 15px;
 }
 
@@ -23,26 +27,42 @@
 
 #signupbtn {
   margin-left:15px; 
-  background-color:#2D4250; 
+  background-color:rgb(98, 133, 156); 
   color:white;
+  margin-bottom: 2%;
 }
 
 #signinbtn {
-  background-color:#2D4250; 
+  background-color:rgb(98, 133, 156); 
   color:white;
+  margin-bottom: 5%;
 }
 
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: white;
+  color: rgb(98, 133, 156);
   cursor: default;
-  background-color: #2D4250;
+  background-color: white ;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
 
- a {
+a {
   color:#2D4250;
- }
+}
 
+#info {
+  margin-top: 1%;
+  border:solid;
+  border-width:thin; 
+  width:57%;
+  height: 100%; 
+  padding:0px;
+  border-color: lightgray;
+}
+
+#toptabs {
+  width: 100%;
+  margin-top: 3%;
+}
