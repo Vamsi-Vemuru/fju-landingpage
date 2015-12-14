@@ -11,12 +11,14 @@
 
 #header {
   color:white; 
-  font-family: 'Lobster', cursive; 
+  font-family: 'Slabo 10px', serif; 
   margin-top:2px;
+  font-size: 40px;
+  margin-top: 15px;
 }
 
-#sign-up {
-  margin-top:1%;
+#sign-up, #sign-in  {
+  margin-top:3%;
 }
 
 #signupbtn {
@@ -25,11 +27,22 @@
   color:white;
 }
 
-#sign-in {
-  margin-top:1%;
-}
-
 #signinbtn {
   background-color:#2D4250; 
   color:white;
 }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: white;
+  cursor: default;
+  background-color: #2D4250;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+ a {
+  color:#2D4250;
+ }
+
