@@ -1,0 +1,35 @@
+.jumbotron {
+  padding-top:0px; 
+  padding-bottom:0px; 
+  background-color:#2D4250;
+}
+
+#logo {
+  margin-top:5px; 
+  margin-right:20px;
+}
+
+#header {
+  color:white; 
+  font-family: 'Lobster', cursive; 
+  margin-top:2px;
+}
+
+#sign-up {
+  margin-top:1%;
+}
+
+#signupbtn {
+  margin-left:15px; 
+  background-color:#2D4250; 
+  color:white;
+}
+
+#sign-in {
+  margin-top:1%;
+}
+
+#signinbtn {
+  background-color:#2D4250; 
+  color:white;
+}
