@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="fju-landingpage">
 <head>
   <title>Welcome to FJU</title>
   <meta charset="utf-8">
@@ -9,8 +9,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="js/app.js" ></script>
 </head>
-<body>
+<body ng-controller="landing-page-controller">
 <div class="container-fluid jumbotron">
   <div class="row">
     <div class="col-sm-2">
@@ -32,6 +34,7 @@
   <div class="row">
     <div class="col-sm-2"></div>
   <div class="col-sm-8">
+  
     <h1>Masters of Science in Software Development</h1><hr>
     <p>The Master of Science in Software Development program is designed to provide an immersive learn by doing experience for students who aspire to take up roles in fast-paced software companies and tech startups. The curriculum begins with an introduction to programming, object oriented programming and databases as the foundation courses. Students then prepared to develop software for the Internet and Android devices. In addition students apply their skills and professional software development practices on real customer projects to attain a mastery in the field.</p>
   </div>
