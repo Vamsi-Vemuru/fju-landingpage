@@ -22,10 +22,10 @@
       <h1 id="header">Franklin Jefferson University</h1>
     </div>
     <div class="col-sm-5">
-      <ul id="toptabs" class="nav nav-pills nav-justified">
-        <li class="active"><a data-toggle="tab" href="#">Get to know FJU</a></li>
-        <li><a data-toggle="tab" href="#">Learning at FJU</a></li>
-        <li><a data-toggle="tab" href="#">FJU Courses</a></li>
+      <ul id="toptabs" class="nav nav-bar nav-justified">
+        <li class="active"><a  href="#">Get to know FJU</a></li>
+        <li><a  href="#">Learning at FJU</a></li>
+        <li><a  href="#">FJU Courses</a></li>
       </ul>
     </div>
   </div>
@@ -34,109 +34,101 @@
   <div class="row">
     <div class="col-sm-2"></div>
   <div class="col-sm-8">
-  
+
     <h1>Masters of Science in Software Development</h1><hr>
     <p>The Master of Science in Software Development program is designed to provide an immersive learn by doing experience for students who aspire to take up roles in fast-paced software companies and tech startups. The curriculum begins with an introduction to programming, object oriented programming and databases as the foundation courses. Students then prepared to develop software for the Internet and Android devices. In addition students apply their skills and professional software development practices on real customer projects to attain a mastery in the field.</p>
   </div>
   <div class="col-sm-2"></div> 
   </div>  
 </div>
-<div id="info" class="container well-sm">
-  
-  <div class="col-sm-12" style="padding:0px">
-    <ul id="innertabs" class="nav nav-pills nav-justified" style="background-color:rgb(98, 133, 156)">
-    <li class="active"><a data-toggle="tab" href="#overview">Overview</a></li>
-    <li><a data-toggle="tab" href="#eligibility">Eligibility</a></li>
-    <li><a data-toggle="tab" href="#courses">Courses</a></li>
-    <li><a data-toggle="tab" href="#sign-up">Sign Up</a></li>
-    <li><a data-toggle="tab" href="#sign-in">Sign In</a></li>
-  </ul>
-  <div class="tab-content">
-    <div id="overview" class="tab-pane fade in active">
-      <h3>Overview</h3>
+<div id="info" class="container">
+  <div class="panel panel-default">
+  <div ng-controller="TabController as tab"  class="col-sm-12">
+    <div class="panel-heading">
+    <ul id="innertabs" class="nav nav-bar nav-justified" >
+      <li ng-class="{active:tab.isSet(1)}"><a  href ng-click="tab.setTab(1)">Overview</a></li>
+      <li ng-class="{active:tab.isSet(2)}"><a  href ng-click="tab.setTab(2)">Eligibility</a></li>
+      <li ng-class="{active:tab.isSet(3)}"><a  href ng-click="tab.setTab(3)">Courses</a></li>
+      <li ng-class="{active:tab.isSet(4)}"><a  href ng-click="tab.setTab(4)">Sign Up</a></li>
+      <li ng-class="{active:tab.isSet(5)}"><a  href ng-click="tab.setTab(5)">Sign In</a></li>
+    </ul>
     </div>
-    <div id="eligibility" class="tab-pane fade">
-      <h3>Eligibility</h3>
-    </div>
-    <div id="courses" class="tab-pane fade">
-      <h3>Courses</h3>
-    </div>
-    <div id="sign-up" class="tab-pane fade">
-      <div class="container" style="width:100%">
-      <form role="form" class="form-horizontal">
-        <div class="form-group">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+    
+    <div class="panel-body" class="tab-content">
+      <div ng-show="tab.isSet(1)" id="overview">
+        <h3>Overview</h3>
+        {{overview}}
+      </div>
+      <div ng-show="tab.isSet(2)" id="eligibility">
+        <h3>Eligibility</h3>
+        {{eligibility}}
+      </div>
+      <div ng-show="tab.isSet(3)" id="courses">
+        <h3>Courses</h3>
+        {{courses}}
+      </div>
+      <div ng-show="tab.isSet(4)" id="sign-up">
+        <div class="container">
+          <form role="form" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <input type="password" class="form-control" id="conf-pwd" placeholder="Re-enter password">
+              </div>
+            </div>
+            <button type="submit" id="signupbtn" class="btn btn-default">Sign Up</button>
+          </form>
+        </div>
+      </div>
+      <div ng-show="tab.isSet(5)" id="sign-in">
+        <div class="container">
+        <fieldset>
+        <form role="form" class="form-horizontal">
+          <div class="form-group">
+            
+            <div class="col-sm-5">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-5">
+              <label for="pwd">Password</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password"> 
+            </div>
+          </div>
+          <div>
+            <label><input type="checkbox"> Remember me</label>
           </div>
           <div class="col-sm-3">
-            <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+            <button type="submit" id="signinbtn" class="btn btn-default">Sign In</button>
           </div>
-          <div class="col-sm-3"></div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6">
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
-          </div>
-          <div class="col-sm-3"></div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6">
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-          </div>
-          <div class="col-sm-3"></div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6">
-            <input type="password" class="form-control" id="conf-pwd" placeholder="Re-enter password">
-          </div>
-          <div class="col-sm-3"></div>
-        </div>
-        <div class="col-sm-3"></div>
-        <button type="submit" id="signupbtn" class="btn btn-default">Sign Up</button>
-      </form>
-    </div>
+          
+        </form>
+      </fieldset>
+      </div>
 
-    </div>
-    <div id="sign-in" class="tab-pane   fade">
-      <div class="container" style="width:100%">
-      <fieldset>
-      <form role="form" class="form-horizontal">
-        <div class="form-group">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-5">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
-          </div>
-          <div class="col-sm-4"></div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-5">
-            <label for="pwd">Password</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password"> 
-          </div>
-          <div class="col-sm-4"></div>
-        </div>
-        <div class="col-sm-3"></div>
-        <div class="checkbox col-sm-3">
-          <label><input type="checkbox"> Remember me</label>
-        </div>
-        <div class="col-sm-3">
-          <button type="submit" id="signinbtn" class="btn btn-default">Sign In</button>
-        </div>
-        <div class="col-sm-3"></div>
-        
-      </form>
-    </fieldset>
-    </div>
-
+      </div>
     </div>
   </div>
-  </div>
+
 </div>
 
 

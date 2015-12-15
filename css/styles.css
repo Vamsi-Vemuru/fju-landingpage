@@ -22,21 +22,14 @@
 }
 
 #sign-up, #sign-in  {
-  margin-top:3%;
+  margin-left: 0px;
 }
 
-#signupbtn {
-  margin-left:15px; 
-  background-color:rgb(98, 133, 156); 
-  color:white;
-  margin-bottom: 2%;
+.form-horizontal{
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-#signinbtn {
-  background-color:rgb(98, 133, 156); 
-  color:white;
-  margin-bottom: 5%;
-}
 
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
